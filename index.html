@@ -20,38 +20,36 @@
         --color-purple: #9300FF;
         --color-blue: #3090F0;
       }
-      * {
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-      }
       html {
         font-family: 'Rubik';
         font-size: 100%;
         color: var(--color-light-A);
+      }
+      body {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background: var(--color-dark-A);
         background-image: url('hero.jpg');
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
         background-attachment: fixed;
+        border: 1px solid rgba(0,0,0,0);
       }
-      html::after {
-        content: "";
-        position: fixed;
+      .overlay {
+        position: absolute;
         z-index: 1;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
         background: var(--color-dark-B);
-        opacity: 0.35;
-      }
-      body {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
+        opacity: .35;
+     }
       .red {
         color: var(--color-red);
       }
@@ -63,7 +61,7 @@
       }
       .contentWrapper {
         position: relative;
-        z-index: 2;
+        z-index: 5;
         max-width: 567px;
         margin: 274px auto 150px 100px;
       }
@@ -141,6 +139,7 @@
     </style>
   </head>
   <body>
+    <div class="overlay"></div>
     <div class="contentWrapper">
       <h1>What’s up guys?</h1>
       <h3>My name is Zachary Newton. I am a UI & UX Designer, a Developer, a <a href="https://www.youtube.com/channel/UCWfGm9LosEAeQVMZsp2HgAw" target="_blank" class="red">YouTuber</a>, and a <a href="" target="_blank" class="purple">Podcaster</a>.</h3>
@@ -211,7 +210,6 @@
               </g>
             </g>
           </svg>
-
         </a>
       </div>
       <p>During the day, I work as a User Interface and User Experience Designer over at <a href="http://augustasoftsol.com" target="_blank" class="blue">Augusta HiTech</a>. After my day at work, I continue to pursue my passions of Design and Development by creating videos for the community that I am building on <a href="https://www.youtube.com/channel/UCWfGm9LosEAeQVMZsp2HgAw" target="_blank" class="blue">YouTube</a>. I always create at least one tutorial video every Saturday, and I have challenged myself to start documenting everything I do by vlogging every weekday. I am very proud to say that I still have never missed a due date.</p>
