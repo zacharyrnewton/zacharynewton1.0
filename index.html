@@ -9,135 +9,128 @@
     <link href="/zacharynewton/favicon.png" rel="shortcut icon" type="image/x-icon"/>
     <link href="/zacharynewton/zacharynewton-apple-icon.png" rel="apple-touch-icon"/>
     <style>
-      @import url('https://fonts.googleapis.com/css?family=Rubik:400,500,700');
-      :root {
-        --color-dark-A: #080808;
-        --color-dark-B: #261F1F;
-        --color-light-A: #FFFFFF;
-        --color-light-B: #E6E6E6;
-        --color-black: #000000;
-        --color-red: #FF0000;
-        --color-purple: #9300FF;
-        --color-blue: #3090F0;
-      }
-      html {
-        font-family: 'Rubik';
-        font-size: 100%;
-        color: var(--color-light-A);
-      }
-      body {
-        position: relative;
-        z-index: 1;
-        margin: 0;
-        padding: 0;
-        background: var(--color-dark-A);
-        background-image: url('hero.jpg');
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        border: 1px solid rgba(0,0,0,0);
-      }
-      .overlay {
-        position: absolute;
-        z-index: 1;
-        top: 0px;
-        right: 0px;
-        bottom: 0px;
-        left: 0px;
-        background: var(--color-dark-B);
-        opacity: .35;
-     }
-      .red {
-        color: var(--color-red);
-      }
-      .purple {
-        color: var(--color-purple);
-      }
-      .blue {
-        color: var(--color-blue);
-      }
-      .contentWrapper {
-        position: relative;
-        z-index: 5;
-        max-width: 567px;
-        margin: 274px auto 150px 100px;
-      }
-      h1 {
-        font-weight: 700;
-        font-size: 3.125rem;
-        letter-spacing: 0.80px;
-        margin: 0;
-        padding: 0 0 10px 0;
-      }
-      h3 {
-        font-weight: 400;
-        font-size: 2.1875rem;
-        margin: 0;
-        padding: 10px 0;
-      }
-      p {
-        color: var(--color-light-B);
-        font-weight: 400;
-        font-size: 1.25rem;
-        line-height: 1.875rem;
-        letter-spacing: 0.40px;
-        margin: 0;
-        padding: 1rem 0;
-      }
-      .socialMediaWrapper {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-        flex-direction: row;
-        -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-        justify-content: space-between;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        height: 50px;
-        width: 350px;
-        margin: 60px 0 140px 0
-      }
-      a {
-        font-size: inherit;
-        font-weight: 500;
-        text-decoration: none;
-        transition: text-decoration 0.15s ease-out;
-      }
-      a:hover {
-        text-decoration: underline;
-      }
-      a.socialIcon {
-        display: block;
-        width: 50px;
-        height: 50px;
-        background: var(--color-light-A);
-        border-radius: 10px;
-        overflow: hidden;
-      }
-      a.socialIcon svg, a.socialIcon img {
-        width: 100%;
-        height: 100%;
-      }
-      a.socialIcon, a.socialIcon {
-        -webkit-transition: all 0.1s ease-out;
-        -o-transition: all 0.1s ease-out;
-        transition: all 0.1s ease-out;
-      }
-      a.socialIcon:hover, a.socialIcon:hover {
-        -webkit-transform: scale(1.05);
-        -ms-transform: scale(1.05);
-        transform: scale(1.05);
-      }
+    @import url('https://fonts.googleapis.com/css?family=Rubik:400,500,700');
+    :root {
+      --color-dark-A: #080808;
+      --color-dark-B: #261F1F;
+      --color-light-A: #FFFFFF;
+      --color-light-B: #E6E6E6;
+      --color-black: #000000;
+      --color-red: #FF0000;
+      --color-purple: #9300FF;
+      --color-blue: #3090F0;
+    }
+    html {
+      font-family: 'Rubik';
+      font-size: 100%;
+      color: var(--color-light-A);
+    }
+    body {
+      position: relative;
+      z-index: 1;
+      margin: 0;
+      padding: 0;
+      background: var(--color-dark-A);
+      background-image: url('hero.jpg');
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      border: 1px solid rgba(0,0,0,0);
+    }
+    .red {
+      color: var(--color-red);
+    }
+    .purple {
+      color: var(--color-purple);
+    }
+    .blue {
+      color: var(--color-blue);
+    }
+    .contentWrapper {
+      position: relative;
+      z-index: 5;
+      max-width: 567px;
+      margin: 274px auto 150px 100px;
+    }
+    h1 {
+      font-weight: 700;
+      font-size: 3.125rem;
+      letter-spacing: 0.80px;
+      margin: 0;
+      padding: 0 0 10px 0;
+    }
+    h3 {
+      font-weight: 400;
+      font-size: 2.1875rem;
+      margin: 0;
+      padding: 10px 0;
+    }
+    p {
+      color: var(--color-light-B);
+      font-weight: 400;
+      font-size: 1.25rem;
+      line-height: 1.875rem;
+      letter-spacing: 0.40px;
+      margin: 0;
+      padding: 1rem 0;
+    }
+    .socialMediaWrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      height: 50px;
+      width: 350px;
+      margin: 60px 0 140px 0
+    }
+    a {
+      font-size: inherit;
+      font-weight: 500;
+      text-decoration: none;
+      -webkit-transition: -webkit-text-decoration 0.15s ease-out;
+      transition: -webkit-text-decoration 0.15s ease-out;
+      -o-transition: text-decoration 0.15s ease-out;
+      transition: text-decoration 0.15s ease-out;
+      transition: text-decoration 0.15s ease-out, -webkit-text-decoration 0.15s ease-out;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    a.socialIcon {
+      display: block;
+      width: 50px;
+      height: 50px;
+      background: var(--color-light-A);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    a.socialIcon svg, a.socialIcon img {
+      width: 100%;
+      height: 100%;
+    }
+    a.socialIcon, a.socialIcon {
+      -webkit-transition: all 0.1s ease-out;
+      -o-transition: all 0.1s ease-out;
+      transition: all 0.1s ease-out;
+    }
+    a.socialIcon:hover, a.socialIcon:hover {
+      -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+      transform: scale(1.05);
+    }
     </style>
   </head>
   <body>
-    <div class="overlay"></div>
     <div class="contentWrapper">
       <h1>What’s up guys?</h1>
       <h3>My name is Zachary Newton. I am a UI & UX Designer, a Developer, a <a href="https://www.youtube.com/channel/UCWfGm9LosEAeQVMZsp2HgAw" target="_blank" class="red">YouTuber</a>, and a <a href="" target="_blank" class="purple">Podcaster</a>.</h3>
